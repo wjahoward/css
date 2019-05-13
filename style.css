@@ -1,0 +1,162 @@
+:root {
+    /* just playing around with css variables */
+    --main-paragraph-color: yellow;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    height: 100%;
+    grid-template-areas:
+        'menu header'
+        'menu content'
+        'menu footer';
+    grid-template-columns: 200px;
+}
+
+.box {
+    color: black;
+    background: lightgrey;
+}
+
+.box-header {
+    grid-area: header;
+    color: grey;
+}
+
+.box-header>p {
+    padding: 20px 20px;
+    font-size: 1.5em;
+}
+
+.box-header .input-group {
+    float: right;
+}
+
+.box-header .input-group .search-bar {
+    border: 0;
+    position: relative;
+    right: 10em;
+    bottom: 3.9em;
+    border-bottom: 3px solid lightgray;
+}
+
+.box-header .input-group .search-bar:focus {
+    outline: none;
+    border-bottom: 3px solid black;
+    height: 30px;
+    width: 200px;
+    font-size: 0.8em;
+}
+
+.box-header .input-group .search-icon,
+.box-header .input-group .notification-icon,
+.box-header .input-group .user-icon {
+    position: relative;
+    bottom: 2.6em;
+}
+
+.box-header .input-group .search-icon {
+    right: 7em;
+}
+
+.box-header .input-group .notification-icon {
+    right: 5em;
+}
+
+.box-header .input-group .user-icon {
+    right: 3em;
+}
+
+.box-menu {
+    grid-area: menu;
+    background: black;
+    color: white;
+    text-align: center;
+    --margin-top-menu: 30px;
+}
+
+.box-menu p {
+    margin-top: var(--margin-top-menu);
+}
+
+.box-menu hr {
+    margin-top: calc(var(--margin-top-menu) / 2);
+}
+
+.box-content {
+    grid-area: content;
+    padding: 10px 10px;
+}
+
+.box-footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.box-header,
+.box-footer {
+    background-color: transparent;
+}
+
+nav ul {
+    position: sticky;
+    top: 0;
+}
+
+img,
+nav ul li {
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    color: white;
+}
+
+hr {
+    border-top: 1.5px solid grey;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    z-index: 99;
+    font-size: 18px;
+    outline: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    opacity: 0;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+#myBtn:hover {
+    background-color: red;
+    opacity: 1;
+    filter: "alpha(opacity=100)";
+    -ms-filter: "alpha(opacity=100)";
+}
