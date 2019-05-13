@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mediaQueryMin900.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="hoverToTop.js"></script>
 
@@ -20,11 +21,16 @@
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
         <div class='main'>
             <div class="box box-header">
+                <div class="hamburger-menu" onclick="hamburgerFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
                 <p>Dashboard</p>
                 <div class='input-group'>
                     <input type="text" class='search-bar' placeholder="Search.." name="search"><i
                         class="fa fa-search search-icon"></i>
-                    <i class="fa fa-bell notification-icon" aria-hidden="true"></i>
+                    <i class="fa fa-bell notification-icon" aria-hidden="true"><span class="badge">3</span></i>
                     <i class="fa fa-user user-icon"></i>
                 </div>
             </div>
