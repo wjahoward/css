@@ -1,0 +1,50 @@
+.you-are-awesome-top {
+    grid-column: span 20;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: #ff78eb;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.875em;
+}
+
+header {
+    grid-column: span 20;
+    display: flex;
+    font-size: 0.887em;
+    justify-content: space-between;
+    padding: 2em 2em;
+}
+
+header .header-left {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header .header-left,
+header .header-right {
+    margin-top: 2em;
+}
+
+header .header-left a {
+    padding-left: 2em;
+}
+
+header .header-right i {
+    padding-left: 1em;
+}
+
+header .header-middle {
+    margin-right: 17em;
+}
+
+header .header-right .facebook-icon,
+header .header-right .pinterest-icon,
+header .header-right .instagram-icon {
+    font-size: 1.3em;
+}
