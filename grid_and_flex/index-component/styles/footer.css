@@ -1,0 +1,7 @@
+footer {
+    grid-column: span 10;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background: black;
+    padding-top: 1em;
+}
