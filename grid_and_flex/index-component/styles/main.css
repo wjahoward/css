@@ -99,16 +99,55 @@ main .subscription-corner p {
     font-size: 0.8em;
 }
 
-main .instagram-corner .instagram-container {
+.instagram-corner .instagram-container {
     margin-top: 1.8em;
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(2, 150px);
 }
 
-main .instagram-corner .instagram-container img {
+.instagram-corner .instagram-container img {
     width: 100%;
     object-fit: cover;
+}
+
+.overlay-instagram-image-2 {
+    grid-column-start: 5;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.overlay-instagram-image-2:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1em;
+    width: 70%;
 }
 
 .instagram-image-1 {
@@ -116,13 +155,6 @@ main .instagram-corner .instagram-container img {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-}
-
-.instagram-image-2 {
-    grid-column-start: 5;
-    grid-column-end: 12;
-    grid-row-start: 1;
-    grid-row-end: 5;
 }
 
 .instagram-image-3 {
